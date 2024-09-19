@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "danfo";
+    src: url("../fonts/dancing_script.ttf");
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+
+}
+.navegador{
+    background-color: #a3d215; 
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+.navegador_nos{
+    background-color: #92f3b7; 
+    display: flex;
+    padding-block: 12px;
+    padding-inline: 22px;
+    justify-content: space-between;
+}
+.navegador_prods{
+    background-color: #e0fe85; 
+    display: flex;
+    padding-block: 12px;
+    padding-inline: 22px;
+    justify-content: space-between;
+}
+.navegador_pago{
+    background-color: #81bf55; 
+    display: flex;
+    padding-block: 12px;
+    padding-inline: 22px;
+    justify-content: space-between;
+}
+.navegador_conts{
+    background-color: rgb(222, 170, 72); 
+    display: flex;
+    padding-block: 12px;
+    padding-inline: 22px;
+    justify-content: space-between;
+}
+.links{
+    display: inline-block;
+    margin: 11px;
+    text-align: center;
+}
+.links a{
+    color: #000000;
+    text-decoration: none;
+}
+.titulo a{ 
+    font-family: "danfo";
+    color: #a357be;
+    text-decoration: none;
+    
+}
+.t_nos a{
+    font-family: "danfo";
+    color: #a357be;
+    text-decoration: none;
+}
+.t_prods a{
+    font-family: "danfo";
+    color: #a357be;
+    text-decoration: none;
+}
+.t_pago a{
+    font-family: "danfo";
+    color: #a357be;
+    text-decoration: none;
+}
+.t_conts a{
+    font-family: "danfo";
+    color: #a357be;
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+}
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Por ahora decido no usar los botones, espero a que me pasen las imagenes editadas con sus titulos  
+.boton{
+    background-color: #a357be;
+    text-decoration: #000000;
+    font-size: 24px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+    */
+.telefono{
+    width: 100%;
+}
+body{
+    background-image: url(../imgs/logo_coralie.jpeg);
+}
+.pie{
+    background-color: #a357be;
+    display: flex;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    justify-content: space-between;
+}
+.imgs_footer{
+    width: 2rem;
+    margin: 0.5rem; 
+}
+.m_footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:600px){
+    .navegador{
+        justify-content: space-between;
+    }
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 , 40%);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 30% 20%;
+    }
+    main .img-uno, main .img-tres{
+        grid-row: span 2;
+    }
+    main .img-dos, main .img-cuatro{
+        grid-column: span 1;
+    }
+    main .img-cinco{
+        grid-column: span 3;
+    }
+    
+}
